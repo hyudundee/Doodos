@@ -1,0 +1,639 @@
+.navbar-default {
+    background-color: #69779b;
+    margin: 0;
+    border: None;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: "Borealis", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Borealis", sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.btn:focus, /*清除btn按钮点击出现的边框*/
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none !important; box-shadow:none !important;
+}
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+#contents {
+    margin: 0;
+    top: 0;
+}
+
+.EventSlides {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+}
+
+.EventSlides img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.Profile {
+    position: relative;
+}
+
+.ProfileBanner {
+    left: 0;
+    right: 0;
+    top: 0;
+    /* Having banner as absolute position
+    is the key to overlap ProfileWrap on Banner*/
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.ProfileBanner img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.PostBar {
+    padding: 25px 30px 16px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#theModal Button {
+    float: right;
+}
+
+.GroupTitle {
+    background-color: white;
+    margin-top: 8px;
+    padding: 0 70px 8px 70px;
+    border-bottom: 1px solid lightgray;
+}
+
+.GroupWrap {
+    padding: 20px 50px 50px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+.GroupSidebar {
+    padding: 25px 30px 16px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    width: 360px;
+    text-align: center;
+}
+
+.GroupContents {
+    margin: 0 0 50px 50px;
+    width: 720px;
+}
+
+.EventTabs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    padding-inline-start: 0;
+}
+
+.EventTabs .tab {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 40px 0 0;
+    list-style: none;
+}
+
+.EventTabs .tab a {
+    color: #696969;
+    cursor: pointer;
+}
+
+.EventWrap {
+    padding: 20px 50px 50px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.EventSidebar {
+    padding: 25px 30px 16px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    width: 360px;
+    text-align: center;
+}
+
+.EventContents {
+    margin: 0 0 50px 50px;
+    flex: 1;
+}
+
+.EventTabs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    padding-inline-start: 0;
+}
+
+.EventTabs .tab {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 40px 0 0;
+    list-style: none;
+}
+
+.EventTabs .tab a {
+    color: #696969;
+    cursor: pointer;
+}
+
+.ProfileWrap {
+    padding: 60px 50px 50px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.ProfileSidebar {
+    padding: 25px 30px 16px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    width: 360px;
+    text-align: center;
+}
+
+.AvatarContainer {
+    align-self: flex-start;
+    height: 118px;
+    width: 118px;
+    display: inline-flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    /* The next line fixes the huge blank
+    caused by the overflow of pic */
+    vertical-align: top;
+}
+
+.MiniAvatarContainer {
+    align-self: flex-start;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    /* The next line fixes the huge blank
+    caused by the overflow of pic */
+    vertical-align: top;
+}
+
+.AvatarContainer .img-circle {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-circle {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.UserItem {
+    padding: 5px 10px 5px 10px;
+    height: 40px;
+}
+
+.cartHeader {
+    font-weight: bold;
+    height: 30px;
+}
+
+.CartItem {
+    padding: 5px 10px 5px 10px;
+    height: 70px;
+}
+
+.ItemContainer {
+    align-self: flex-start;
+    height: 60px;
+    width: 90px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    /* The next line fixes the huge blank
+    caused by the overflow of pic */
+    vertical-align: top;
+}
+
+.img-rec {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ProfileContents {
+    margin: 149px 0 50px 50px;
+    flex: 1;
+}
+
+.ProfileTabs {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    padding-inline-start: 0;
+}
+
+.ProfileTabs .tab {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 40px 0 0;
+    list-style: none;
+}
+
+.ProfileTabs .tab a {
+    color: #696969;
+    cursor: pointer;
+}
+
+.ProfileTabs .tab a:hover a:active {
+    color: #0f0f0f;
+}
+
+.Footer {
+    height: 40px;
+    background: #eee;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    line-height: 30px;
+}
+
+.GroupsContentsWrapper {
+    width: 100%;
+    overflow: auto;
+}
+
+.thumbnail {
+    width: 540px;
+    margin: 30px auto;
+}
+
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
+    font-family: Microsoft YaHei, '宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'feathericons';
+}
+
+.grid {
+    overflow: hidden;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    /* the next 3 lines keeps the pics in 16:9 scale */
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    margin: -0.135em;
+    /* background: #3085a3; this covers the figure with transparency */
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 100%;
+}
+
+/* Individual effects */
+
+
+/*---------------*/
+/***** Sadie *****/
+/*---------------*/
+
+figure.effect-sadie img {
+    width: -webkit-calc(100% + 50px);
+    width: calc(100% + 50px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-40px,0, 0);
+    transform: translate3d(-40px,0,0);
+}
+
+figure.effect-sadie figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    background: linear-gradient(to bottom, rgba(72,76,97,0) 60%, rgba(72,76,97,0.6) 85%);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(0,50%,0);
+    transform: translate3d(0,50%,0);
+}
+
+figure.effect-sadie h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+    transition: transform 0.35s, color 0.35s;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+    padding: 0.5em;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translate3d(0,10px,0);
+    transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie:hover h2 {
+    color: #fff;
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/*---------------*/
+/***** Marley *****/
+/*---------------*/
+figure.effect-marley figcaption::before {
+    position: absolute;
+    top: 53px;
+    left: 0;
+    width: 100%;
+    height: 301px;
+    background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.6) 85%);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(0,50%,0);
+    transform: translate3d(0,50%,0);
+}
+
+figure.effect-marley figcaption {
+    text-align: left;
+    color: white;
+}
+
+figure.effect-marley h2,
+
+figure.effect-marley p {
+    position: absolute;
+    right: 30px;
+    left: 30px;
+    padding: 10px 0;
+}
+
+figure.effect-marley p {
+    top: 225px;
+    width: 60%;
+    line-height: 2;
+    -webkit-transform: translate3d(0,10%,0);
+    transform: translate3d(0,10%,0);
+}
+
+figure.effect-marley p .eventDescription {
+    /*single line:*/
+    /*overflow:hidden;*/
+    /*text-overflow:ellipsis;*/
+    /*white-space:nowrap;*/
+
+    /*multiple lines:*/
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+
+/* Fading animation */
+.effect-marley {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.switch {
+    position: absolute;
+    top: 180px;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    outline: none;
+    padding: 16px;
+    border-radius: 0 3px 3px 0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    text-decoration: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.switch:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: lightgray;
+    text-decoration: none;
+}
+
+figure.effect-marley h2 {
+    top: 40px;
+    font-weight: bold;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+figure.effect-marley:hover h2 {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-marley h2::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 30%;
+    height: 4px;
+    background: #fff;
+    content: '';
+    -webkit-transform: translate3d(0,40px,0);
+    transform: translate3d(0,40px,0);
+}
+
+figure.effect-marley h2::after,
+figure.effect-marley p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-marley:hover figcaption::before,
+figure.effect-marley:hover h2::after,
+figure.effect-marley:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}

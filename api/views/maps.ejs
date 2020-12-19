@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Doodos Map</title>
+    <style>
+      #map {
+        height: 600px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        // map options
+        const options = {
+          zoom: 11,
+          center: { lat: 32.7157, lng: -117.1611 },
+        };
+        // new map
+        const map = new google.maps.Map(
+          document.getElementById('map'),
+          options
+        );
+        /*
+        // add marker
+        const marker = new google.maps.Marker({
+          position: { lat: 32.698565, lng: -117.141877 },
+          map: map,
+          icon:
+            'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+        });
+        const contentString =
+          '<h1>Colossus</h1>' +
+          '<img src="https://i.ibb.co/PgZ7RqB/727x545-Colossus.jpg" height="200"/>' +
+          '<p>Here is some description \n This is another line </p>';
+
+        const infoWindow = new google.maps.InfoWindow({
+          content: contentString,
+        });
+
+        */
+        // generate array of markers
+        var p = <%-JSON.stringify(p)%>;
+        for (let i = 0; i < p.length; i++) {
+          if (p[i].lng === 0 || p[i].lat === 0) {continue;}
+          const m = {
+            coords: {lat: p[i].lat, lng: p[i].lng},
+            content:
+              `<h1>${p[i].title}</h1>
+              <img src=${p[i].imageUrl} height="350" align="middle"/>
+              <p>${p[i].text}</p>`
+          };
+          addMarker(m);
+        }
+
+        function addMarker(props) {
+          const marker = new google.maps.Marker({
+            position: props.coords,
+            map: map,
+            icon:
+              'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          });
+          // check content
+          if (props.content) {
+            const infoWindow = new google.maps.InfoWindow({
+              content: props.content,
+            });
+            marker.addListener('click', function () {
+              infoWindow.open(map, marker);
+            });
+          }
+        }
+      }
+    </script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=<%= process.env.apiKey%>&callback=initMap"
+    ></script>
+  </body>
+</html>
